@@ -1,6 +1,6 @@
 # AZ-204
-https://icarus9bly.azurewebsites.net/#
-
+    - https://icarus9bly.azurewebsites.net/# (Pathfinding Visualizer)
+    - https://app.pluralsight.com/paths/skills/developing-solutions-for-microsoft-azure-az-204?aid=7010a000002BWq6AAG 
 # Azure CLI pattern
     - az objectname verb parameters   
     - az group create --location --name
