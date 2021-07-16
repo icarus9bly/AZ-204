@@ -29,6 +29,8 @@
     - parameters are like values file from helm
     - variables are like configmap
     - functions are like in-built functions from helm.
+    - Deploying ARM from Azure CLI:
+        - az deployment group create --resource-group Web-App --template-file ./template.json --parameters '@parameters.json'
     
 # Virtual Machines in Azure
     - Default Size: Standard D2S
