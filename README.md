@@ -13,7 +13,7 @@
     - Useful Commands:
         - az group list --output=table # List resource groups (in tabular format)
         - az group delete --name "vimeo-rg" # Delete RG (also deletes any resources in them)
-# ARM Templates (Azure resource management)()
+# ARM Templates (Azure resource management)
     - Is a JSON file that defines your resources building block for automation.
     - Basic syntax of ARM Templates (https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/syntax):
       {
@@ -39,7 +39,10 @@
         - az vm create --resource-group "vimeo-rg" --name "vimeo" --image "UbuntuLTS" --admin-username "demo-admin" --authentication-type "ssh" --ssh-key-value ~/.ssh/id_rsa.pub # Creating vm with ssh pub from host machine
         - az vm open-port --resource-group "vimeo-rg" --name "vimeo" --port "22" # Enable remote port access
         - az vm list-ip-addresses # List public ip addr of VMs
-
+# Containers in Azure:
+    - Azure container registry hosted in azure based on docker registry
+    - Azure container instances (ACI)
+    
 # Web App
    - App Service Web Apps lets you quickly build, deploy, and scale enterprise-grade web, mobile, and API apps running on any platform. Meet rigorous performance, scalability, security and compliance requirements while using a fully managed platform to perform infrastructure maintenance.
 
