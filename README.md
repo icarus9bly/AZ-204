@@ -10,7 +10,8 @@
 # Azure CLI pattern
     - az objectname verb parameters   
     - az group create --location --name
-
+    - Useful Commands:
+        - az group list --output=table # List resource groups (in tabular format)
 # Virtual Machines in Azure
     - Default Size: Standard D2S
     - create VMs with azure cli
