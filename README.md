@@ -11,8 +11,9 @@
     - az objectname verb parameters   
     - az group create --location --name
 
-# Default VM size
-    - Standard D2S
+# Virtual Machines in Azure
+    - Default Size: Standard D2S
+    - 
 
 # Web App
    - App Service Web Apps lets you quickly build, deploy, and scale enterprise-grade web, mobile, and API apps running on any platform. Meet rigorous performance, scalability, security and compliance requirements while using a fully managed platform to perform infrastructure maintenance.
