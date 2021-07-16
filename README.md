@@ -16,6 +16,8 @@
     - create VMs with azure cli
         - az group create --name "vimeo-rg" --location "centralus" # Create Resource group
         - az vm create --resource-group "vimeo-rg" --name "vimeo" --image "UbuntuLTS" --admin-username "demo-admin" --authentication-type "ssh" --ssh-key-value ~/.ssh/id_rsa.pub # Creating vm with ssh pub from host machine
+        - az vm open-port --resource-group "vimeo-rg" --name "vimeo" --port "22" # Enable remote port access
+        - az vm list-ip-addresses # List public ip addr of VMs
 
 # Web App
    - App Service Web Apps lets you quickly build, deploy, and scale enterprise-grade web, mobile, and API apps running on any platform. Meet rigorous performance, scalability, security and compliance requirements while using a fully managed platform to perform infrastructure maintenance.
