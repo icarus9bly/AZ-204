@@ -13,8 +13,23 @@
     - Useful Commands:
         - az group list --output=table # List resource groups (in tabular format)
         - az group delete --name "vimeo-rg" # Delete RG (also deletes any resources in them)
-# ARM Templates (Azure resource management)
+# ARM Templates (Azure resource management)()
     - Is a JSON file that defines your resources building block for automation.
+    - Basic syntax of ARM Templates (https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/syntax):
+      {
+          "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+          "contentVersion": "",
+          "apiProfile": "",
+          "parameters": {  },
+          "variables": {  },
+          "functions": [  ],
+          "resources": [  ],
+          "outputs": {  }
+      }
+    - parameters are like values file from helm
+    - variables are like configmap
+    - functions are like in-built functions from helm.
+    
 # Virtual Machines in Azure
     - Default Size: Standard D2S
     - create VMs with azure cli
