@@ -12,6 +12,7 @@
     - az group create --location --name
     - Useful Commands:
         - az group list --output=table # List resource groups (in tabular format)
+        - az group delete --name "vimeo-rg" # Delete RG (also deletes any resources in them)
 # Virtual Machines in Azure
     - Default Size: Standard D2S
     - create VMs with azure cli
