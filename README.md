@@ -13,7 +13,9 @@
 
 # Virtual Machines in Azure
     - Default Size: Standard D2S
-    - 
+    - create VMs with azure cli
+        - az group create --name "vimeo-rg" --location "centralus" # Create Resource group
+        - az vm create --resource-group "vimeo-rg" --name "vimeo" --image "UbuntuLTS" --admin-username "demo-admin" --authentication-type "ssh" --ssh-key-value ~/.ssh/id_rsa.pub # Creating vm with ssh pub from host machine
 
 # Web App
    - App Service Web Apps lets you quickly build, deploy, and scale enterprise-grade web, mobile, and API apps running on any platform. Meet rigorous performance, scalability, security and compliance requirements while using a fully managed platform to perform infrastructure maintenance.
