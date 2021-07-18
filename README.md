@@ -42,6 +42,7 @@
 # Containers in Azure:
     - Azure container registry (ACR) hosted in azure based on docker registry
     - Azure container instances (ACI)
+    - ACR can be 
     
 # Web App
    - App Service Web Apps lets you quickly build, deploy, and scale enterprise-grade web, mobile, and API apps running on any platform. Meet rigorous performance, scalability, security and compliance requirements while using a fully managed platform to perform infrastructure maintenance.
