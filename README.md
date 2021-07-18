@@ -40,7 +40,7 @@
         - az vm open-port --resource-group "vimeo-rg" --name "vimeo" --port "22" # Enable remote port access
         - az vm list-ip-addresses # List public ip addr of VMs
 # Containers in Azure:
-    - Azure container registry hosted in azure based on docker registry
+    - Azure container registry (ACR) hosted in azure based on docker registry
     - Azure container instances (ACI)
     
 # Web App
