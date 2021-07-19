@@ -50,6 +50,7 @@
         - az acr show -n icarus9bly --query loginServer # To get the registry server url for e.g. icarus9bly.azurecr.io
         - docker tag tryreact:latest icarus9bly.azurecr.io/tryreact:latest # Tag image to push it to ACR
         - docker push icarus9bly.azurecr.io/tryreact:latest # Push to ACR
+        - az acr repository list --name icarus9bly -o table # Show images in ACR
     
 # Web App
    - App Service Web Apps lets you quickly build, deploy, and scale enterprise-grade web, mobile, and API apps running on any platform. Meet rigorous performance, scalability, security and compliance requirements while using a fully managed platform to perform infrastructure maintenance.
