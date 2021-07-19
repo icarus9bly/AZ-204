@@ -53,7 +53,7 @@
         - az acr repository list --name icarus9bly -o table # Show images in ACR
         - az acr repository show-tags --name icarus9bly --repository tryreact -o table # Show images tag
         - We Don't have to build locally then push, we can build in ACR with Tasks.
-            - az acr build --image "tryreact:v1-acr-task" --registry "icarus9bly" . # build, tag and push the image from dockerfile in pwd to ACR
+            - az acr build --image "icarus9bly.azurecr.io/tryreact:v1-acr-task" --registry "icarus9bly" . # build, tag and push the image from dockerfile in pwd to ACR
     
 # Web App
    - App Service Web Apps lets you quickly build, deploy, and scale enterprise-grade web, mobile, and API apps running on any platform. Meet rigorous performance, scalability, security and compliance requirements while using a fully managed platform to perform infrastructure maintenance.
