@@ -42,7 +42,9 @@
 # Containers in Azure:
     - Azure container registry (ACR) hosted in azure based on docker registry
     - Azure container instances (ACI)
-    - 
+    - Commands:
+        - az group create --resource-group "acr_test-rg" --location westus
+        - az acr create --resource-group "acr_test-rg" --name "icarus9bly" --sku Standard # Create ACR, name should be unique as it will the part of azure domain name
     
 # Web App
    - App Service Web Apps lets you quickly build, deploy, and scale enterprise-grade web, mobile, and API apps running on any platform. Meet rigorous performance, scalability, security and compliance requirements while using a fully managed platform to perform infrastructure maintenance.
