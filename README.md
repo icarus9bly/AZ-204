@@ -13,6 +13,7 @@
     - Useful Commands:
         - az group list --output=table # List resource groups (in tabular format)
         - az group delete --name "vimeo-rg" # Delete RG (also deletes any resources in them)
+        - az account set --subscription "Azure subscription 1"
 # ARM Templates (Azure resource management)
     - Is a JSON file that defines your resources building block for automation.
     - Basic syntax of ARM Templates (https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/syntax):
