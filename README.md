@@ -40,7 +40,7 @@
         - az vm create --resource-group "vimeo-rg" --name "vimeo" --image "UbuntuLTS" --admin-username "demo-admin" --authentication-type "ssh" --ssh-key-value ~/.ssh/id_rsa.pub # Creating vm with ssh pub from host machine
         - az vm open-port --resource-group "vimeo-rg" --name "vimeo" --port "22" # Enable remote port access
         - az vm list-ip-addresses # List public ip addr of VMs
-# Containers in Azure:
+# ACR (Containers in Azure):
     - Azure container registry (ACR) hosted in azure based on docker registry
     - Azure container instances (ACI)
     - Commands:
@@ -54,7 +54,7 @@
         - az acr repository show-tags --name icarus9bly --repository tryreact -o table # Show images tag
         - We Don't have to build locally then push, we can build in ACR with Tasks.
             - az acr build --image "tryreact:v1-acr-task" --registry "icarus9bly" . # build, tag and push the image from dockerfile in pwd to ACR
-# Service Principal:
+# Service Principal to access images from ACR to ACI:
 ```sh #!/bin/bash
 # This script requires Azure CLI version 2.25.0 or later. Check version with `az --version`.
 
@@ -81,6 +81,8 @@ SP_APP_ID=$(az ad sp list --display-name $SERVICE_PRINCIPAL_NAME --query [].appI
 echo "Service principal ID: $SP_APP_ID"
 echo "Service principal password: $SP_PASSWD"
 ```    
+# ACI
+    - az container create --resource-group myResourceGroup --name mycontainer --image mcr.microsoft.com/azuredocs/aci-helloworld --dns-name-label aci-demo --ports 80
 # Web App
    - App Service Web Apps lets you quickly build, deploy, and scale enterprise-grade web, mobile, and API apps running on any platform. Meet rigorous performance, scalability, security and compliance requirements while using a fully managed platform to perform infrastructure maintenance.
 
