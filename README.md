@@ -90,3 +90,16 @@ echo "Service principal password: $SP_PASSWD"
    - App Service Web Apps lets you quickly build, deploy, and scale enterprise-grade web, mobile, and API apps running on any platform. Meet rigorous performance, scalability, security and compliance requirements while using a fully managed platform to perform infrastructure maintenance.
    - Isolated and Non-Isolated.
    - Isolated with App service environments(ACE)
+```sh
+az group create -n webapps-dev-rg -l westus2
+
+az appservice plan create --name webapps-dev-plan \
+  --resource-group webapps-dev-rg \
+  --sku s1 \
+  --is-linux
+  
+az webapp create -g webapps-dev-rg \
+  -p webapps-dev-plan \
+  -n mp10344884 \
+  --runtime "node|10.14"
+ ```
