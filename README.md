@@ -108,6 +108,7 @@ az webapp create -g webapps-dev-rg \
    - Scale In and Scale out
 
 # Azure Functions
+    - Create a function app, which lets you group functions as a logical unit for easier management, deployment and sharing of resources. Functions lets you execute your code in a serverless environment without having to first create a VM or publish a web application.
     - Service Plan:
         - Consumption Plan
         - App service Plan
