@@ -113,3 +113,9 @@ Create a function app, which lets you group functions as a logical unit for easi
     - Consumption Plan
     - App service Plan
     - Premium Plan
+- **Azure function triggers:**
+    - HTTP request trigger
+    - Timer trigger
+    - Queue trigger
+    - Cosmos DB trigger
+    - Blob trigger
