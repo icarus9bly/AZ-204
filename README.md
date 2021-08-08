@@ -106,3 +106,9 @@ az webapp create -g webapps-dev-rg \
    - [Deploy app service with ARM template](https://azure.microsoft.com/en-us/resources/templates/webapp-windows-aspnet/)
    - SSL
    - Scale In and Scale out
+
+# Azure Functions
+    - Service Plan:
+        - Consumption Plan
+        - App service Plan
+        - Premium Plan
