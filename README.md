@@ -120,3 +120,6 @@ Create a function app, which lets you group functions as a logical unit for easi
     - Cosmos DB trigger
     - Blob trigger
 - **Every** function has it's own **function.json** with defines all the **triggers and bindings**
+- **Bindings:**
+    - A binding is connection to data. Bindings are optional and can be input or output. Input bindings provide read-access to data. Ouptut bindings when we wanna write data to external service.
+    - 
