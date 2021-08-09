@@ -1,3 +1,11 @@
+# To do:
+- Complete Pluralsight course
+- Pratice test from udemy
+    - https://sapient.udemy.com/course/70532-azure/learn/quiz/4705734#overview
+    - https://sapient.udemy.com/course/az-204-developing-solutions-for-microsoft-azure-practice-tests/learn/quiz/5063382#overview
+- [vceplus](https://vceplus.com/exam-az-204/)
+
+
 # AZ-204
     - https://icarus9bly.azurewebsites.net/# (Pathfinding Visualizer)
     - https://app.pluralsight.com/paths/skills/developing-solutions-for-microsoft-azure-az-204?aid=7010a000002BWq6AAG 
