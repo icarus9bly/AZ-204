@@ -119,3 +119,4 @@ Create a function app, which lets you group functions as a logical unit for easi
     - Queue trigger
     - Cosmos DB trigger
     - Blob trigger
+- **Every** function has it's own **function.json** with defines all the **triggers and bindings**
